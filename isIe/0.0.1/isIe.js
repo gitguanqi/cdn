@@ -26,5 +26,5 @@ function checkIe() {
   var isIe = checkIe();
   
   if (isIe == 'IE') {
-    location.href = 'https://guanqi.xyz/fe/link/browser/';
+    location.href = 'https://fe.guanqi.xyz/link/browser/';
   }
