@@ -6,7 +6,7 @@ type: 类型，
 url:网址
 title:标题
 */
-function xqShare(type, url, title) {
+function xqShare(type, url, title, des) {
   let types = {
     // qq
     qq: function (url, title) {
@@ -14,7 +14,7 @@ function xqShare(type, url, title) {
     },
     // qq空间
     qzone: function (url, title) {
-      return `http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=${url}&title=${title}&site=${hosts.baseUrl}&desc=快来好奇博客参与讨论吧~`;
+      return `http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=${url}&title=${title}&site=${url}&desc=${des}`;
     },
     // 微信
     wechat: function (url, title) {
