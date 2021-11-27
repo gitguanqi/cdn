@@ -4,12 +4,12 @@ This is front-end static public libiary.
 
 ## use
 
-BaseUrl: [https://www.guanqi.fun](https://www.guanqi.fun)
+BaseUrl: [https://www.guanqi.fun/cdn](https://www.guanqi.fun/cdn)
 
 File address:
 
-+ js: `{BaseUrl}/cdn/{libiary}/{version}/js/{name}`;
-+ css: `{BaseUrl}/cdn/{libiary}/{version}/css/{name}`;
++ js: `{BaseUrl}/{libiary}/{version}/js/{name}`;
++ css: `{BaseUrl}/{libiary}/{version}/css/{name}`;
 
 eg. font-awesome
 
