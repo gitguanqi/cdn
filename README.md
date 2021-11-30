@@ -4,7 +4,7 @@ This is front-end static public libiary.
 
 ## use
 
-BaseUrl: [https://www.guanqi.fun/cdn](https://www.guanqi.fun/cdn)
+BaseUrl: [https://guanqi.fun/cdn](https://guanqi.fun/cdn)
 
 File address:
 
@@ -14,8 +14,8 @@ File address:
 eg. font-awesome
 
 ```html
-<link href="https://www.guanqi.fun/cdn/font-awesome/5.15.3/css/all.css" rel="stylesheet">
-<link href="https://www.guanqi.fun/cdn/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<link href="https://guanqi.fun/cdn/font-awesome/5.15.3/css/all.css" rel="stylesheet">
+<link href="https://guanqi.fun/cdn/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 ```
 
 ## issue
