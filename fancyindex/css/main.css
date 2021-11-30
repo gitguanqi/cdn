@@ -6,7 +6,7 @@ body {
     margin-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: 50px;
-    background-image: url('/cdn/fancyindex/img/bg_pattern.png');
+    background-image: url('/fancyindex/img/bg_pattern.png');
     background-repeat: repeat;
 }
 body> .container {
