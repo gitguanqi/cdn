@@ -191,7 +191,7 @@ button {
 }
 
 /* 选中内容 */
-body::selection {
+.select-box::selection {
     background: #d73e3e;
     color: #fff;
 }
