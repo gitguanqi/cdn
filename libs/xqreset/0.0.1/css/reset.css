@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+    display: none;
+}
+
+body {
+    line-height: 1;
+}
+
+menu,
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* clear float */
+.clearFix::after {
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+/* ie 6/7 */
+.clearFix {
+    zoom: 1;
+}
+
+body {
+    font-family: 'opensansBold', 'Microsoft YaHei';
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+select,
+button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+* {
+    font-family: 'opensansBold';
+}
+
+/* 省略 */
+.overflow-one {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.hide {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* msg */
+.success {
+    background-color: #bde4c0;
+    color: #1b7322;
+}
+
+.error {
+    background-color: rgb(236, 221, 221);
+    color: #a91e12;
+}
+
+.warning {
+    background-color: rgb(236, 220, 186);
+    color: #9b6412;
+}
+
+.info {
+    background-color: rgb(241, 236, 236);
+    color: #242222;
+}
+
+.success-text {
+    color: #1b7322;
+}
+
+.error-text {
+    color: #a91e12;
+}
+
+.warning-text {
+    color: #9b6412;
+}
+
+.info-text {
+    color: #242222;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, .83);
+    overflow: hidden;
+    z-index: 108;
+}
+
+#loading.active {
+    display: none;
+}
+
+.loading-inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-inner span {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 6px solid rgba(0, 0, 0, .15);
+    border-left-color: #d32d2d;
+    animation: donut-spin 1.2s linear infinite;
+}
+
+.loading-inner i {
+    position: absolute;
+    font-size: 28px;
+    color: #d32d2d;
+}
+
+@keyframes donut-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.scroll-box::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+    border-radius: 6px;
+    background: #e6e6e6;
+  }
+  
+  /*定义滑块*/
+  .scroll-box::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #D32D2D;
+  }
+  
+  body::selection {
+    background: #d73e3e;
+    color: #fff;
+  }
+
+  .song-box::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 6px;
+    background: rgb(255, 255, 255, .4);
+  }
+  
+  /*定义滑块*/
+  .song-box::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #fff;
+  }
