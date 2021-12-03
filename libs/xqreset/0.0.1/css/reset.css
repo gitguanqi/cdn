@@ -190,33 +190,21 @@ button {
     overflow: hidden;
 }
 
+/* 选中内容 */
+body::selection {
+    background: #d73e3e;
+    color: #fff;
+}
+
+/*定义滑块*/
 .scroll-box::-webkit-scrollbar {
     width: 6px;
     height: 10px;
     border-radius: 6px;
     background: #e6e6e6;
-  }
-  
-  /*定义滑块*/
-  .scroll-box::-webkit-scrollbar-thumb {
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background: #D32D2D;
-  }
-  
-  body::selection {
-    background: #d73e3e;
-    color: #fff;
-  }
-
-  .song-box::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    border-radius: 6px;
-    background: rgb(255, 255, 255, .4);
-  }
-  
-  /*定义滑块*/
-  .song-box::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background: #fff;
-  }
+}
