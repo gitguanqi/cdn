@@ -4,7 +4,7 @@ This is front-end static public libiary.
 
 ## use
 
-BaseUrl: [https://guanqi.fun/xqcdn/libs](https://guanqi.fun/xqcdn/libs)
+BaseUrl: [https://gitguanqi.github.io/xqcdn/libs](https://gitguanqi.github.io/xqcdn/libs)
 
 File address:
 
@@ -14,13 +14,13 @@ File address:
 eg. font-awesome
 
 ```html
-<link href="https://guanqi.fun/xqcdn/libs/font-awesome/5.15.3/css/all.css" rel="stylesheet">
-<link href="https://guanqi.fun/xqcdn/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<link href="https://gitguanqi.github.io/xqcdn/libs/font-awesome/5.15.3/css/all.css" rel="stylesheet">
+<link href="https://gitguanqi.github.io/xqcdn/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 ```
 
 ## issue
 
-[submit your question](https://github.com/gitguanqi/cdn/issues/new)
+[submit your question](https://github.com/gitguanqi/xqcdn/issues/new)
 
 ## author
 
