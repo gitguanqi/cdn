@@ -11,7 +11,7 @@
     let mouth = now.getMonth()+1;
     let day = now.getDate();
     let date = mouth.toString()+'.'+day.toString();
-    let mourns = ['12.13'];
+    let mourns = ['12.13', '7.7'];
 
     // 南京大屠杀国家公祭日
     if (mourns.includes(date)) {
