@@ -11,11 +11,10 @@
     let mouth = now.getMonth()+1;
     let day = now.getDate();
     let date = mouth.toString()+'.'+day.toString();
-    let mourns = ['12.13', '7.7', 'all'];
+    let mourns = ['12.13', '7.7'];
 
     // 南京大屠杀国家公祭日
-    if (mourns.includes(date) ||
-    mourns.includes('all')) {
+    if (mourns.includes(date)) {
         document.documentElement.style = 'filter: gray; filter: grayscale(1)';
     } else {
         document.documentElement.style = '';
