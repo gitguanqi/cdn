@@ -1,4 +1,5 @@
 var contentTable = document.getElementById('list');
+var year = document.getElementById('year');
 contentTable.setAttribute('class', 'table table-hover');
 
 var listItems = [].slice.call(document.querySelectorAll('#list tbody tr'));
@@ -42,6 +43,8 @@ jQuery.each(jQuery('#nginx-fancyindex-directory').text().split('/'), function(id
     currentDirectory = currentDirectory + directory + "/";
   }
 });
+
+year.innerText = new Date().getFullYear();
 
 // 统计服务
 // <!-- Matomo -->
