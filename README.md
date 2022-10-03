@@ -18,7 +18,7 @@ eg. axios、bootstrap
 <!-- 1.axios -->
 <script src="https://i.xqgj.cc/libs/axios/0.19.2/axios.min.js"></script>
 <!-- 2.bootstrap -->
-<script src="https://i.xqgj.cc/libs/bootstrap/5.0.2/js/bootstrap.min.js /"></script>
+<script src="https://i.xqgj.cc/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
 <link href="https://i.xqgj.cc/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
 ```
 
