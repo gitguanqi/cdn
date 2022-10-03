@@ -4,7 +4,7 @@ This is front-end static public libiary.
 
 ## use
 
-BaseUrl: [https://i.xqgj.cc/libs](https://i.xqgj.cc/libs)
+BaseUrl: [https://cdn.xqgj.cc/libs](https://cdn.xqgj.cc/libs)
 
 File address:
 
@@ -16,10 +16,10 @@ eg. axios、bootstrap
 
 ```html
 <!-- 1.axios -->
-<script src="https://i.xqgj.cc/libs/axios/0.19.2/axios.min.js"></script>
+<script src="https://cdn.xqgj.cc/libs/axios/0.19.2/axios.min.js"></script>
 <!-- 2.bootstrap -->
-<script src="https://i.xqgj.cc/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
-<link href="https://i.xqgj.cc/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.xqgj.cc/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+<link href="https://cdn.xqgj.cc/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
 ```
 
 ## contents
