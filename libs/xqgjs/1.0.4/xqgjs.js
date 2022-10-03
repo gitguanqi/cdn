@@ -1,15 +1,16 @@
-/*
- * @Author: Mr.Mark  
- * @Date: 2019-08-22 13:54:39 
- * @Last Modified by: fed_Mr.Mark 
- * @Last Modified time: 2019-10-19 09:59:04
- */
-/** 
- * author: gitguanqi,
- * date: 2019.8.22,
- * version: v1.0.2
- */
-(function (window) {
+(function (root, factory) {
+  if (typeof module === 'object' && typeof module.exports === 'object') {
+    module.exports = factory();
+  } else if (typeof define === 'function' && define.amd) {
+    define(factory());
+  } else if (typeof define === 'function' && define.cmd) {
+    define(function (require, exports, module) {
+      module.exports = factory();
+    });
+  } else {
+    window.gjs = $g = factory();
+  }
+})(this, function factory() {
   // common var
   var $w = window;
   var $d = document;
@@ -25,7 +26,7 @@
   // gjs info
   Gjs.info = {
     name: 'gjs',
-    date: '2019-08-22',
+    date: '2022-09-29',
     version: 'v1.0.2'
   }
 
@@ -313,7 +314,7 @@
   Gjs.checkCardId = function (name) {
     return idReg.test(name);
   }
-  
+
   /**
    * bom set area
    * include daily/location/history/navigator. ect set
@@ -630,18 +631,15 @@
         if (xhr.status === 200) {
           //success
           result = {
-            code: this.status,
+            code: 200,
             msg: 'get_succ',
-            data: {
-              info: '获取成功!',
-              data: JSON.parse(this.response),
-            }
+            data: JSON.parse(this.response),
           }
           cb(result);
         } else {
           // failed
           result = {
-            code: this.status,
+            code: 101,
             msg: 'get_fail',
             data: {
               info: '获取失败!',
@@ -1009,17 +1007,17 @@
     var version = navigator.appVersion;
     var versionName = '';
     if (ie && version) {
-        if (version.indexOf('rv:11.0') != -1) {
-            return versionName = 'ie11'
-        } else if (version.indexOf('MSIE 10.0') != -1) {
-            return versionName = 'ie10'
-        } else if (version.indexOf('MSIE 9.0') != -1) {
-            return versionName = 'ie9'
-        } else if (version.indexOf('MSIE 8.0') != -1) {
-            return versionName = 'ie8'
-        } else if (version.indexOf('MSIE 7.0') != -1) {
-            return versionName = 'ie7'
-        }
+      if (version.indexOf('rv:11.0') != -1) {
+        return versionName = 'ie11'
+      } else if (version.indexOf('MSIE 10.0') != -1) {
+        return versionName = 'ie10'
+      } else if (version.indexOf('MSIE 9.0') != -1) {
+        return versionName = 'ie9'
+      } else if (version.indexOf('MSIE 8.0') != -1) {
+        return versionName = 'ie8'
+      } else if (version.indexOf('MSIE 7.0') != -1) {
+        return versionName = 'ie7'
+      }
     }
     return -1;
   }
@@ -1040,17 +1038,29 @@
     return browserName;
   }
 
+  // downloadFile
+  function downloadFile (url, name) {
+    let extName = url.split('/');
+    extName = extName[extName.length-1];
+    extName = extName.indexOf('?') > -1 ? extName.split('?')[0] : extName;
+    let donwBtn = document.createElement('a');
+    donwBtn.download = name || 'xqlight-'+extName;
+    donwBtn.href = url;
+    document.body.appendChild(donwBtn);
+    donwBtn.click();
+    document.body.removeChild(donwBtn);
+}
+
   // register to gjs extend object
   Gjs.extend({
     Drag: Drag,
     Tab: Tab,
-    Carousels: Carousels
+    Carousels: Carousels,
+    download: downloadFile,
   });
 
-  // mount to window
-  window.gjs = $g = Gjs;
-
   // welcome statement.
-  console.info('Hi,You. Welcome to Gjs World! If you want to get more content, please visited our site: https://guanqi.xyz!');
+  console.info('Hi,You. Welcome to Gjs World! If you want to get more content, please visited our site: https://github.com/gitguanqi/xqgjs !');
 
-})(window)
+  return Gjs;
+});
