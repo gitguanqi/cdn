@@ -4,19 +4,43 @@ This is front-end static public libiary.
 
 ## use
 
-BaseUrl: [https://xqgj.cc/xqcdn/libs](https://xqgj.cc/xqcdn/libs)
+BaseUrl: [https://i.xqgj.cc/libs](https://i.xqgj.cc/libs)
 
 File address:
 
-+ js: `{BaseUrl}/{libiary}/{version}/js/{name}`;
-+ css: `{BaseUrl}/{libiary}/{version}/css/{name}`;
++ js1: `{BaseUrl}/{libiary}/{version}/js/{name}.js`;
++ js2: `{BaseUrl}/{libiary}/{version}/{name}.js`;
++ css: `{BaseUrl}/{libiary}/{version}/css/{name}.css`;
 
 eg. font-awesome
 
 ```html
-<link href="https://xqgj.cc/xqcdn/libs/font-awesome/5.15.3/css/all.css" rel="stylesheet">
-<link href="https://xqgj.cc/xqcdn/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<!-- 1.axios -->
+<script src="https://i.xqgj.cc/libs/axios/0.19.2/axios.min.js"></script>
+<!-- 2.bootstrap -->
+<script src="https://i.xqgj.cc/libs/bootstrap/5.0.2/js/bootstrap.min.js /"></script>
+<link href="https://i.xqgj.cc/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
 ```
+
+## contents
+
++ fancyindex
+
+nginx-fancyindex-theme store.
+
++ img
+
+Some small pictures commonly used on case websites.
+
++ libs
+
+Some class library frameworks commonly used in the front-end.
+
++ soft
+
+Some gadget software for daily use.
+
+soft bak
 
 ## issue
 
