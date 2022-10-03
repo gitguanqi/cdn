@@ -1,4 +1,4 @@
-# cdn
+# xqcdn
 
 This is front-end static public libiary.
 
@@ -12,7 +12,7 @@ File address:
 + js2: `{BaseUrl}/{libiary}/{version}/{name}.js`;
 + css: `{BaseUrl}/{libiary}/{version}/css/{name}.css`;
 
-eg. font-awesome
+eg. axios、bootstrap
 
 ```html
 <!-- 1.axios -->
@@ -39,8 +39,6 @@ Some class library frameworks commonly used in the front-end.
 + soft
 
 Some gadget software for daily use.
-
-soft bak
 
 ## issue
 
